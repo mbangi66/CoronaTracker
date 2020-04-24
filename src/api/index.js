@@ -14,7 +14,7 @@ export const fetchData = async states => {
     const { data } = await axios.get(changeableUrl);
 
     const modifiedData = {
-      confirmed: data.Confirmed,
+      confirmed: parseInt(data.Confirmed),
       recovered: data.Cured,
       deaths: data.Death
     };
