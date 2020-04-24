@@ -20,7 +20,7 @@ const Chart = ({ data, states }) => {
               "rgba(0, 255, 0, 0.5)",
               "rgba(255, 0, 0, 0.5)"
             ],
-            data: [data.confirmed, data.recovered, data.deaths]
+            data: [data.confirmed,data.recovered, data.deaths]
           }
         ]
       }}
@@ -31,7 +31,7 @@ const Chart = ({ data, states }) => {
     />
   ) : null;
 
-  return <div className={styles.container}>{barChart}</div>;
+  return (<div className={styles.container}>{barChart}</div>);
 };
 
 export default Chart;
